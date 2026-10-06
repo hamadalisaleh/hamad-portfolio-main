@@ -7,7 +7,7 @@ type LeadWithBriefs = ClientLead & {
 function getLeadSummary(lead: LeadWithBriefs) {
   const latestBrief = lead.briefs?.[0];
   return [
-    `طلب مشروع جديد من موقع حماد`,
+    `طلب مشروع جديد من موقع حمد`,
     ``,
     `العميل: ${lead.name}`,
     `الهاتف: ${lead.phone || "غير محدد"}`,

@@ -18,7 +18,7 @@ export default async function Home() {
     ...content,
     profile: {
       ...content.profile,
-      nameAr: "حماد علي صالح حسن",
+      nameAr: "حمد علي صالح حسن",
       nameEn: "HAMAD ALI SALEH HASSAN",
       titleAr: "مطور ويب | PHP & MySQL | Full-Stack Web Development",
       titleEn: "Junior Web Developer | PHP & MySQL | Full-Stack Web Development",
@@ -88,7 +88,7 @@ export default async function Home() {
     },
     footer: {
       ...content.footer,
-      text: "© 2026 حماد علي صالح حسن · Junior Web Developer & IT Specialist.",
+      text: "© 2026 حمد علي صالح حسن · Junior Web Developer & IT Specialist.",
     },
   };
 

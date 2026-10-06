@@ -156,7 +156,7 @@ This is listed factually as participation; no winner, finalist, award, or rankin
 
 ## Current identity
 
-- Arabic: `حماد علي صالح حسن`
+- Arabic: `حمد علي صالح حسن`
 - English: `HAMAD ALI SALEH HASSAN`
 - Email: `hamadalisalhe@gmail.com`
 - GitHub: https://github.com/hamadalisaleh

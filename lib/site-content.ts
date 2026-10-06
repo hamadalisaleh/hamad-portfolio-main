@@ -261,10 +261,10 @@ export const defaultSiteContent: SiteContent = {
       "المساعد يسأل عن نوع الموقع، المتطلبات، والهدف المطلوب.",
       "يتم تحديد الميزات المطلوبة، نطاق الاستضافة، والميزانية المتوقعة.",
       "المساعد يحوّل الإجابات إلى ملخص مشروع منظم.",
-      "الطلب يصل لمراجعة حماد علي والتواصل معك مباشرة.",
+      "الطلب يصل لمراجعة حمد علي والتواصل معك مباشرة.",
     ],
     chatGreeting:
-      "مرحبًا، أنا مساعد حماد علي الذكي. سأساعدك في تحديد متطلبات موقعك، استضافتك، أو نظامك التقني وتجهيز طلب واضح. كيف يمكنني مساعدتك اليوم؟",
+      "مرحبًا، أنا مساعد حمد علي الذكي. سأساعدك في تحديد متطلبات موقعك، استضافتك، أو نظامك التقني وتجهيز طلب واضح. كيف يمكنني مساعدتك اليوم؟",
   },
   contact: {
     kicker: "تواصل",
@@ -275,17 +275,17 @@ export const defaultSiteContent: SiteContent = {
     locationLabel: "الموقع",
     whatsappLabel: "واتساب",
     whatsappCta: "راسلني على واتساب",
-    whatsappMessage: "مرحبًا حماد، أريد الاستفسار عن خدمة تطوير موقع أو استشارة تقنية.",
+    whatsappMessage: "مرحبًا حمد، أريد الاستفسار عن خدمة تطوير موقع أو استشارة تقنية.",
     items: [
       { id: "email", icon: "mail", label: "البريد الإلكتروني", value: "hamadalisalhe@gmail.com", href: "mailto:hamadalisalhe@gmail.com", enabled: true, highlighted: false },
       { id: "phone", icon: "phone", label: "الهاتف", value: "+967 734189000", href: "tel:+967734189000", enabled: true, highlighted: false },
       { id: "whatsapp", icon: "whatsapp", label: "واتساب", value: "راسلني على واتساب", href: "https://wa.me/967734189000", enabled: true, highlighted: true },
       { id: "location", icon: "location", label: "الموقع", value: "تعز - اليمن", href: "", enabled: true, highlighted: false },
-      { id: "linkedin", icon: "link", label: "LinkedIn", value: "حماد علي صالح على LinkedIn", href: "https://www.linkedin.com/in/hamad-ali-2485a9271/", enabled: true, highlighted: false },
+      { id: "linkedin", icon: "link", label: "LinkedIn", value: "حمد علي صالح على LinkedIn", href: "https://www.linkedin.com/in/hamad-ali-2485a9271/", enabled: true, highlighted: false },
     ],
   },
   footer: {
-    text: "© 2026 حماد علي صالح حسن. جميع الحقوق محفوظة - مطور ويب وأخصائي تقنية معلومات.",
+    text: "© 2026 حمد علي صالح حسن. جميع الحقوق محفوظة - مطور ويب وأخصائي تقنية معلومات.",
   },
   sections: {
     about: true,
@@ -389,10 +389,10 @@ const legacyArabicText: Record<string, string> = {
 };
 
 const legacyStringReplacements: Array<[string, string]> = [
-  ["أحمد شوقي محمد قائد", "حماد علي صالح حسن"],
-  ["أحمد شوقي منصور", "حماد علي صالح حسن"],
-  ["أحمد شوقي", "حماد علي"],
-  ["أحمد", "حماد"],
+  ["أحمد شوقي محمد قائد", "حمد علي صالح حسن"],
+  ["أحمد شوقي منصور", "حمد علي صالح حسن"],
+  ["أحمد شوقي", "حمد علي"],
+  ["أحمد", "حمد"],
   ["AHMED SHAWQI MOHAMMED QAID", "HAMAD ALI SALEH HASSAN"],
   ["AHMED SHAWQI MANSOUR", "HAMAD ALI SALEH HASSAN"],
   ["AHMED SHAWQI", "HAMAD ALI"],

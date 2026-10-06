@@ -1,7 +1,7 @@
 import { Code2, Database, Bot, Smartphone, Server, Workflow } from "lucide-react";
 
 export const profile = {
-  nameAr: "حماد علي صالح حسن",
+  nameAr: "حمد علي صالح حسن",
   nameEn: "HAMAD ALI SALEH HASSAN",
   titleAr: "مطور ويب | أخصائي تقنية معلومات (Web Developer | IT Specialist)",
   titleEn: "Web Developer | IT Specialist",

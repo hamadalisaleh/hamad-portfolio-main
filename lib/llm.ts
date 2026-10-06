@@ -16,7 +16,7 @@ type ProviderName = "gemini" | "groq" | "openrouter" | "ollama";
 const DEFAULT_PROVIDER_ORDER: ProviderName[] = ["gemini", "groq", "openrouter", "ollama"];
 
 export const projectAssistantSystemPrompt = `
-أنت AI Project Requirement Assistant داخل موقع حماد علي صالح.
+أنت AI Project Requirement Assistant داخل موقع حمد علي صالح.
 هدفك ليس الدردشة العامة، بل جمع متطلبات العميل وتحويلها إلى طلب مشروع واضح.
 
 اسأل العميل سؤالاً واحداً أو سؤالين بحد أقصى في كل رد.
@@ -40,7 +40,7 @@ function cleanMessages(messages: ChatMessage[]) {
       const isInitialAssistantMessage =
         index === 0 &&
         message.role === "assistant" &&
-        message.content.includes("أنا مساعد حماد الذكي");
+        message.content.includes("أنا مساعد حمد الذكي");
       return !isInitialAssistantMessage;
     })
     .slice(-12);
