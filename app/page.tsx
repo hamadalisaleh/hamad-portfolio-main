@@ -14,78 +14,33 @@ export default async function Home() {
   const settings = await getSiteSettings();
   const { content, contentEn, themeVariant, layoutVariant } = settings;
 
-  const challengeAr = {
-    name: "تحدي ICPC 2026 لهواوي — الجدولة التعاونية بين الحافة والسحابة",
-    status: "مشارك",
-    stack: ["C++20", "Algorithms", "Scheduling", "Optimization", "Edge/Cloud"],
-    description:
-      "شاركت في ICPC 2026 Online Challenge 1 powered by Huawei وعملت على مسألة Edge–Cloud Collaborative Scheduling، وطورت حلًا بلغة C++ شمل التجميع الديناميكي، تخصيص الموارد، موازنة زمن الاستجابة ومعدل الإنتاج، والجدولة المراعية لـ SLO.",
-  };
-
-  const challengeEn = {
-    name: "ICPC 2026 Huawei Challenge — Edge–Cloud Collaborative Scheduling",
-    status: "Participant",
-    stack: ["C++20", "Algorithms", "Scheduling", "Optimization", "Edge/Cloud"],
-    description:
-      "Participated in ICPC 2026 Online Challenge 1 powered by Huawei and worked on Edge–Cloud Collaborative Scheduling, developing an iterative C++ solution covering dynamic batching, resource allocation, latency/throughput trade-offs, and SLO-aware scheduling.",
-  };
-
-  const attendanceAr = {
-    name: "نظام إدارة دوام الموظفين — متعدد المعماريات",
-    status: "مشروع تطبيقي",
-    stack: ["Next.js", "Flutter", "Laravel", "Supabase", "PostgreSQL", "Business Logic"],
-    description:
-      "طورت نظامًا لإدارة الحضور والورديات وقواعد التأخير والانصراف والغياب والسجلات المعلقة، ونفذت منطق العمل نفسه بعدة معماريات مستقلة باستخدام تقنيات ويب وموبايل وباك اند مختلفة.",
-  };
-
-  const attendanceEn = {
-    name: "Employee Attendance Management — Multi-Architecture Suite",
-    status: "Applied Project",
-    stack: ["Next.js", "Flutter", "Laravel", "Supabase", "PostgreSQL", "Business Logic"],
-    description:
-      "Built a business workflow system for attendance, rotating shifts, lateness, early departure, absences, pending records, and overtime, implementing the same business logic across multiple web, mobile, and backend architectures.",
-  };
-
-  const projectsWithChallengeAr = content.projects.some((project) => project.name.includes("ICPC 2026"))
-    ? content.projects
-    : [...content.projects, challengeAr];
-
-  const projectsWithChallengeEn = contentEn.projects.some((project) => project.name.includes("ICPC 2026"))
-    ? contentEn.projects
-    : [...contentEn.projects, challengeEn];
-
-  const projectsAr = projectsWithChallengeAr.some((project) => project.name.includes("نظام إدارة دوام الموظفين"))
-    ? projectsWithChallengeAr
-    : [...projectsWithChallengeAr, attendanceAr];
-
-  const projectsEn = projectsWithChallengeEn.some((project) => project.name.includes("Employee Attendance"))
-    ? projectsWithChallengeEn
-    : [...projectsWithChallengeEn, attendanceEn];
-
   const portfolioContent = {
     ...content,
     profile: {
       ...content.profile,
-      nameAr: "أحمد شوقي محمد قائد",
-      nameEn: "AHMED SHAWQI MOHAMMED QAID",
-      titleAr: "مهندس برمجيات متخصص في Backend وCloud، أبني أنظمة خلفية موثوقة، APIs، قواعد بيانات، منصات أتمتة وبنية تحتية لتطبيقات الذكاء الاصطناعي.",
-      titleEn: "Backend & Cloud Software Engineer building reliable backend systems, APIs, databases, automation platforms, distributed runtimes, and AI infrastructure.",
-      logoText: "AQ",
+      nameAr: "حماد علي صالح حسن",
+      nameEn: "HAMAD ALI SALEH HASSAN",
+      titleAr: "مطور ويب | PHP & MySQL | Full-Stack Web Development",
+      titleEn: "Junior Web Developer | PHP & MySQL | Full-Stack Web Development",
+      logoText: "HA",
+      phone: "+967 734189000",
+      email: "hamadalisalhe@gmail.com",
+      location: "تعز، اليمن",
     },
     hero: {
       ...content.hero,
-      badge: "Backend · Cloud · Platform · AI Infrastructure",
-      highlightedTitle: "مهندس Backend & Cloud",
+      badge: "Full-Stack Web Development · PHP & MySQL",
+      highlightedTitle: "مطور ويب | Full-Stack Web Developer",
       description:
-        "أبني أنظمة خلفية وسحابية موثوقة، من REST APIs وقواعد البيانات إلى التنفيذ المتين، الأتمتة المحكومة بالسياسات، المراقبة، وبنية MCP وAI Agents.",
+        "خريج تقنية معلومات صاحب خبرة عملية في تطوير ونشر تطبيقات الويب باستخدام PHP وMySQL وHTML5 وCSS3 وJavaScript. خبير في تطوير التطبيقات القائمة على قواعد البيانات، المصادقة، وإدارة الاستضافات والشبكات.",
       focusKicker: "تركيزي الحالي",
-      focusTitle: "Backend · Cloud · Platform",
+      focusTitle: "Full-Stack Web & IT Infrastructure",
       focusItems: [
-        "هندسة الباك اند وواجهات REST APIs",
-        "هندسة السحابة والمنصات وقواعد البيانات",
-        "الأنظمة الموزعة والتنفيذ المتين والاستعادة",
-        "الأتمتة وMCP والسياسات والموافقات",
-        "المراقبة وOpenTelemetry وبنية AI Agents",
+        "تطوير تطبيقات الويب المخصصة (PHP & MySQL)",
+        "إدارة الاستضافات والدومينات (Hostinger & cPanel)",
+        "تحسين محركات البحث والأداء (Basic SEO & Optimization)",
+        "تركيب وبرمجة الشبكات وكاميرات المراقبة IP / CCTV",
+        "إدارة وتأمين أنظمة OnyxPro ERP المحاسبية",
       ],
     },
     about: {
@@ -93,48 +48,47 @@ export default async function Home() {
       kicker: "نبذة",
       title: "نبذة عني",
       subtitle:
-        "أركز على Backend & Cloud Software Engineering، مع اهتمام بهندسة المنصات والأنظمة الموزعة والأتمتة والبنية التحتية للذكاء الاصطناعي.",
+        "خريج بكالوريوس تقنية معلومات ومطور ويب متخصص في بناء ونشر تطبيقات الويب وإدارة البنية التحتية والأنظمة التقنية.",
       paragraphs: [
-        "أبني أنظمة برمجية تبدأ من فهم المتطلبات وتنتهي بتطبيق قابل للنشر والصيانة. أعمل على REST APIs، SQL وقواعد البيانات العلائقية، PostgreSQL، Laravel وFastAPI، Docker وCI/CD، ولدي خبرة عملية في تطوير ودعم أنظمة أعمال وتحسينها بشكل مستمر.",
-        "في مشاريعي أعمل على التنفيذ المتين والقابل للاستعادة، الأتمتة المحكومة بالسياسات والموافقات، MCP gateways، تتبع التنفيذ باستخدام OpenTelemetry، وتكاملات AI Agents. أهتم بأن يكون الكود منظمًا، قابلًا للاختبار والنشر والمراقبة، ويتعامل مع الأعطال والعمليات الخارجية بصورة آمنة.",
+        "خريج تقنية معلومات (B.Sc.) من جامعة العلوم والتكنولوجيا (UST) - تعز، لدي خبرة عملية في تطوير ونشر تطبيقات الويب للعملاء باستخدام PHP وMySQL وHTML5 وCSS3 وJavaScript، بالإضافة إلى بناء لوحات التحكم الإدارية ونظام صلاحيات المستخدمين.",
+        "لدي خبرة عملية في تطوير منصة (MawahibSoft)، وتكوين الاستضافات والدومينات على Hostinger وcPanel، وإصدارات Git/GitHub، إلى جانب خلفية متكاملة في تركيب وبرمجة الشبكات وكاميرات المراقبة IP/CCTV وأنظمة OnyxPro ERP المحاسبية.",
       ],
       stats: [
-        { value: "Backend + Cloud", label: "التركيز الأساسي" },
-        { value: "Platform + Distributed", label: "الأنظمة والمنصات" },
-        { value: "Automation + AI Infra", label: "الأتمتة وبنية الذكاء الاصطناعي" },
+        { value: "B.Sc. IT", label: "جامعة العلوم والتكنولوجيا UST (2025)" },
+        { value: "Full-Stack", label: "تطوير الويب (PHP & MySQL)" },
+        { value: "ERP & IT", label: "أنظمة OnyxPro والشبكات" },
       ],
     },
     servicesHeader: {
       ...content.servicesHeader,
-      kicker: "مجالات العمل",
-      title: "ما أعمل عليه",
+      kicker: "الخدمات",
+      title: "الخدمات التقنية",
       subtitle:
-        "Backend وCloud وPlatform Engineering، مع APIs وقواعد البيانات والأتمتة والتكاملات والمراقبة وبنية تطبيقات الذكاء الاصطناعي.",
+        "تطوير تطبيقات الويب الكاملة، إدارة الاستضافات، قواعد البيانات، الشبكات وأنظمة ERP المحاسبية.",
     },
     skillsHeader: {
       ...content.skillsHeader,
       kicker: "المهارات",
-      title: "التقنيات التي أستخدمها",
+      title: "التقنيات والمهارات",
       subtitle:
-        "مجموعة التقنيات والأدوات التي أعتمد عليها في بناء الأنظمة الخلفية والسحابية والمنصات والأتمتة.",
+        "التقنيات والأدوات الأساسية التي أستخدمها في تطوير تطبيقات الويب وإدارة البنية التحتية البرمجية والتقنية.",
     },
     projectsHeader: {
       ...content.projectsHeader,
       kicker: "المشاريع",
       title: "مشاريع مختارة",
       subtitle:
-        "نماذج من عملي في Backend وCloud والأنظمة الموزعة والأتمتة والبنية التحتية للذكاء الاصطناعي.",
+        "نماذج من عملي في تطوير الويب الكامل، نشر الاستضافات، إدارة الشبكات وأنظمة OnyxPro ERP.",
     },
-    projects: projectsAr,
     contact: {
       ...content.contact,
       kicker: "تواصل",
       title: "لنتواصل",
-      subtitle: "للفرص المهنية أو التعاون أو مناقشة مشروع تقني، يمكنك التواصل معي مباشرة أو زيارة GitHub وLinkedIn.",
+      subtitle: "للفرص المهنية، تطوير المواقع، أو الاستشارات التقنية، يمكنك التواصل معي مباشرة عبر البريد، الهاتف، أو الواتساب.",
     },
     footer: {
       ...content.footer,
-      text: "© 2026 أحمد شوقي محمد قائد · Backend & Cloud Software Engineer.",
+      text: "© 2026 حماد علي صالح حسن · Junior Web Developer & IT Specialist.",
     },
   };
 
@@ -142,26 +96,29 @@ export default async function Home() {
     ...contentEn,
     profile: {
       ...contentEn.profile,
-      nameAr: "AHMED SHAWQI MOHAMMED QAID",
-      nameEn: "AHMED SHAWQI MOHAMMED QAID",
-      titleAr: "Backend & Cloud Software Engineer",
-      titleEn: "Backend & Cloud Software Engineer building reliable backend systems, APIs, databases, automation platforms, distributed runtimes, and AI infrastructure.",
-      logoText: "AQ",
+      nameAr: "HAMAD ALI SALEH HASSAN",
+      nameEn: "HAMAD ALI SALEH HASSAN",
+      titleAr: "Junior Web Developer | PHP & MySQL | Full-Stack Web Development",
+      titleEn: "Junior Web Developer | PHP & MySQL | Full-Stack Web Development",
+      logoText: "HA",
+      phone: "+967 734189000",
+      email: "hamadalisalhe@gmail.com",
+      location: "Taiz, Yemen",
     },
     hero: {
       ...contentEn.hero,
-      badge: "Backend · Cloud · Platform · AI Infrastructure",
-      highlightedTitle: "Backend & Cloud Engineer",
+      badge: "Full-Stack Web Development · PHP & MySQL",
+      highlightedTitle: "Junior Web Developer",
       description:
-        "I build reliable backend and cloud systems, from REST APIs and databases to durable execution, policy-controlled automation, observability, and MCP/AI-agent infrastructure.",
+        "Information Technology graduate with hands-on experience developing and deploying client-facing web applications using PHP, MySQL, HTML5, CSS3, and JavaScript. Experienced in database-driven apps, authentication, hosting, and SEO.",
       focusKicker: "CURRENT FOCUS",
-      focusTitle: "Backend · Cloud · Platform",
+      focusTitle: "Full-Stack Web & IT Infrastructure",
       focusItems: [
-        "Backend engineering and REST APIs",
-        "Cloud, platform engineering, and databases",
-        "Distributed systems, durable execution, and recovery",
-        "Automation, MCP, policy, and approvals",
-        "Observability, OpenTelemetry, and AI-agent infrastructure",
+        "Custom Web Application Development (PHP & MySQL)",
+        "Web Hosting & Domain Administration (Hostinger & cPanel)",
+        "Search Engine Optimization (Basic SEO & Performance)",
+        "Network Configuration, IP Cameras & CCTV Systems",
+        "OnyxPro ERP System & Accounting Administration",
       ],
     },
     about: {
@@ -169,48 +126,47 @@ export default async function Home() {
       kicker: "About",
       title: "About Me",
       subtitle:
-        "I focus on Backend & Cloud Software Engineering, with interests in platform engineering, distributed systems, automation, and AI infrastructure.",
+        "Information Technology graduate (B.Sc.) and Web Developer experienced in building and deploying web applications and IT infrastructure.",
       paragraphs: [
-        "I build software systems from requirements through deployment and maintenance. I work with REST APIs, SQL and relational data modeling, PostgreSQL, Laravel and FastAPI, Docker and CI/CD, with hands-on experience developing, supporting, and continuously improving real business systems.",
-        "My projects include durable and recoverable execution, policy-controlled automation and approvals, MCP gateways, OpenTelemetry-based tracing, and AI-agent integrations. I care about software that is structured, testable, deployable, observable, resilient, and safe around external side effects.",
+        "IT graduate (B.Sc.) from the University of Science and Technology (UST) — Taiz, Yemen (2025). Hands-on experience developing and deploying production web applications using PHP, MySQL, HTML5, CSS3, and JavaScript, implementing role-based access control, file uploads, and admin dashboards.",
+        "Successfully delivered the MawahibSoft platform (mawahibsoft.com), configured domain and hosting on Hostinger and cPanel, version control with Git/GitHub, alongside practical training in network configuration, IP/CCTV security camera setup, and OnyxPro ERP financial accounting systems.",
       ],
       stats: [
-        { value: "Backend + Cloud", label: "Primary Focus" },
-        { value: "Platform + Distributed", label: "Systems & Platforms" },
-        { value: "Automation + AI Infra", label: "Automation & AI Infrastructure" },
+        { value: "B.Sc. IT", label: "University of Science & Tech (2025)" },
+        { value: "Full-Stack", label: "Web Dev (PHP & MySQL)" },
+        { value: "ERP & IT", label: "OnyxPro & Networks" },
       ],
     },
     servicesHeader: {
       ...contentEn.servicesHeader,
-      kicker: "Work Areas",
-      title: "What I Work On",
+      kicker: "Services",
+      title: "Technical Services",
       subtitle:
-        "Backend, cloud, and platform engineering across APIs, databases, automation, integrations, observability, and AI infrastructure.",
+        "Full-stack web development, hosting management, relational database design, network setup, and ERP systems.",
     },
     skillsHeader: {
       ...contentEn.skillsHeader,
       kicker: "Skills",
-      title: "Technologies I Use",
+      title: "Technologies & Skills",
       subtitle:
-        "The technologies and tools I use across backend systems, cloud platforms, distributed systems, automation, and AI infrastructure.",
+        "Core languages, databases, hosting platforms, and IT engineering tools used in development and system administration.",
     },
     projectsHeader: {
       ...contentEn.projectsHeader,
       kicker: "Projects",
       title: "Selected Projects",
       subtitle:
-        "A selection of my work across backend, cloud, distributed systems, automation, and AI infrastructure.",
+        "Showcase of production web applications, hosting deployments, network setups, and OnyxPro ERP administration.",
     },
-    projects: projectsEn,
     contact: {
       ...contentEn.contact,
       kicker: "Contact",
       title: "Get in Touch",
-      subtitle: "For professional opportunities, collaboration, or a technical project, contact me directly or visit my GitHub and LinkedIn.",
+      subtitle: "For career opportunities, web development projects, or IT consulting, feel free to contact me directly via Email, Phone, or WhatsApp.",
     },
     footer: {
       ...contentEn.footer,
-      text: "© 2026 AHMED SHAWQI MOHAMMED QAID · Backend & Cloud Software Engineer.",
+      text: "© 2026 HAMAD ALI SALEH HASSAN · Junior Web Developer & IT Specialist.",
     },
   };
 
