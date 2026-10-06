@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vercel": {
+      "command": "cmd.exe",
+      "args": ["/c", "npx", "-y", "@vercel/mcp"]
+    }
+  }
+}
