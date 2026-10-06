@@ -127,11 +127,11 @@ export type SiteContent = {
 
 export const defaultSiteContent: SiteContent = {
   profile: {
-    nameAr: "حماد علي صالح حسن",
+    nameAr: "حمد علي صالح حسن",
     nameEn: "HAMAD ALI SALEH HASSAN",
     logoText: "HA",
-    titleAr: "مهندس بنية تحتية للأتمتة | مطور ويب وأخصائي تقنية معلومات",
-    titleEn: "Automation Infrastructure Engineer | Web Developer & IT Specialist",
+    titleAr: "مطور ويب | أخصائي تقنية معلومات (Web Developer | IT Specialist)",
+    titleEn: "Web Developer | IT Specialist",
     phone: "734189000",
     whatsappNumber: "967734189000",
     email: "hamadalisalhe@gmail.com",
@@ -139,21 +139,21 @@ export const defaultSiteContent: SiteContent = {
     cvUrl: "/api/cv",
   },
   hero: {
-    badge: "Backend · Cloud · Platform · AI Infrastructure",
-    highlightedTitle: "مهندس بنية تحتية للأتمتة",
+    badge: "معرض الأعمال والخدمات التقنية الذكي",
+    highlightedTitle: "مطور ويب | أخصائي تقنية معلومات",
     description:
-      "مهندس برمجيات ومطور ويب متخصص في Cloud و Backend، أبني أنظمة خلفية موثوقة، واجهات برمجية APIs، وقواعد بيانات ومسارات أتمتة مخصصة لرفع كفاءة أعمال المؤسسات والعملاء.",
+      "أطور تطبيقات الويب الكاملة باستخدام PHP وMySQL، أدير استضافات Hostinger، وأصمم بنية الشبكات وأنظمة ERP المحاسبية لتلبية تطلعات العملاء ورفع كفاءة أعمالهم.",
     primaryCta: "عرض المشاريع",
     secondaryCta: "ابدأ مع المساعد الذكي",
     cvCta: "تحميل السيرة",
-    focusKicker: "تركيزي الحالي",
-    focusTitle: "Backend · Cloud · Platform",
+    focusKicker: "التركيز الحالي",
+    focusTitle: "حلول ويب وأنظمة تقنية متكاملة",
     focusItems: [
-      "هندسة الباك اند وواجهات REST APIs",
-      "هندسة السحابة والمنصات وقواعد البيانات",
-      "الأنظمة الموزعة والتنفيذ المتين والاستعادة",
-      "الأتمتة وMCP السياسات والموافقات",
-      "المراقبة وOpenTelemetry وبنية AI Agents",
+      "تطوير مواقع الويب المخصصة (PHP & MySQL)",
+      "إدارة الاستضافات والدومينات (Hostinger CPanel)",
+      "تحسين محركات البحث (SEO)",
+      "تركيب وبرمجة الشبكات وكاميرات المراقبة IP",
+      "إدارة الأنظمة المحاسبية وأنظمة OnyxPro ERP",
     ],
   },
   about: {
@@ -253,7 +253,7 @@ export const defaultSiteContent: SiteContent = {
     subtitle:
       "المساعد يجمع متطلباتك بخصوص بناء الموقع، الاستضافة، أو النظام التقني المطلوب ويقوم بتحويلها إلى طلب منظم.",
     assistantTitle: "المساعد الذكي للمشاريع",
-    assistantSubtitle: "جمع المتطلبات وإرسالها للمعاينة والمراجعة",
+    assistantSubtitle: "جمع متطلبات العملاء وإرسال الطلبات",
     primaryCta: "جرّب المحادثة الآن",
     dashboardCta: "لوحة التحكم",
     processSteps: [
@@ -264,7 +264,7 @@ export const defaultSiteContent: SiteContent = {
       "الطلب يصل لمراجعة حماد علي والتواصل معك مباشرة.",
     ],
     chatGreeting:
-      "مرحبًا، أنا مساعد حماد الذكي. سأساعك في تحويل فكرتك إلى طلب مشروع واضح. هل تريد موقعًا، تطبيقًا، نطاقًا، متجرًا، أم أتمتة؟",
+      "مرحبًا، أنا مساعد حماد علي الذكي. سأساعدك في تحديد متطلبات موقعك، استضافتك، أو نظامك التقني وتجهيز طلب واضح. كيف يمكنني مساعدتك اليوم؟",
   },
   contact: {
     kicker: "تواصل",
@@ -338,15 +338,12 @@ function cleanStringArray(values: string[], maxItems: number, maxText: number) {
 
 
 const legacyArabicText: Record<string, string> = {
-  "أحمد شوقي محمد قائد": "حماد علي صالح حسن",
-  "أحمد شوقي منصور": "حماد علي صالح حسن",
-  "Ahmed Qaid": "HAMAD ALI SALEH HASSAN",
-  "AHMED SHAWQI MANSOUR": "HAMAD ALI SALEH HASSAN",
-  "AQ": "HA",
+  "أحمد شوقي محمد قائد": "أحمد شوقي منصور",
+  "Ahmed Qaid": "AHMED SHAWQI MANSOUR",
   "Portfolio + AI Client Intake System": "معرض أعمال + نظام استقبال طلبات ذكي",
   "Software Engineer": "مهندس برمجيات",
   "ابدأ مع AI Assistant": "ابدأ مع المساعد الذكي",
-  "Current Focus": "تركيزي الحالي",
+  "Current Focus": "التركيز الحالي",
   "Smart Digital Products": "منتجات رقمية ذكية",
   "Backend APIs and business logic": "واجهات برمجية ومنطق أعمال",
   "Flutter mobile applications": "تطبيقات موبايل باستخدام Flutter",
@@ -360,7 +357,7 @@ const legacyArabicText: Record<string, string> = {
   "Contact": "تواصل",
   "AI Assistant": "المساعد الذكي",
   "AI Project Requirement Assistant": "المساعد الذكي للمشاريع",
-  "Client intake workflow": "جمع المتطلبات وإرسالها للمعاينة والمراجعة",
+  "Client intake workflow": "جمع متطلبات العملاء وإرسال الطلبات",
   "Email": "البريد الإلكتروني",
   "Phone": "الهاتف",
   "Location": "الموقع",
@@ -385,10 +382,10 @@ const legacyArabicText: Record<string, string> = {
   "AI-Powered Accounting System": "نظام محاسبي مدعوم بالذكاء الاصطناعي",
   "Child Care Mobile App": "تطبيق موبايل لرعاية الأطفال",
   "n8n Content Automation": "أتمتة المحتوى باستخدام n8n",
-  "© 2026 Ahmed Qaid. Built as a smart portfolio and AI client intake system.": "© 2026 حماد علي صالح حسن. جميع الحقوق محفوظة - مطور ويب وأخصائي تقنية معلومات.",
+  "© 2026 Ahmed Qaid. Built as a smart portfolio and AI client intake system.": "© 2026 أحمد شوقي منصور. موقع شخصي ذكي ونظام استقبال طلبات العملاء.",
   "الخدمات مبنية على المهارات الموجودة في السيرة الذاتية، مع إبراز المجالات الأقوى: Backend، قواعد البيانات، Flutter، والذكاء الاصطناعي التطبيقي.": "خدمات تقنية متكاملة لتحويل الأفكار إلى مواقع، تطبيقات، وأنظمة ذكية عملية.",
   "The services are aligned with the strongest areas in the CV: backend development, databases, Flutter, applied AI, and automation.": "Integrated digital services to transform ideas into practical websites, applications, and smart systems.",
-  "© 2026 AHMED SHAWQI MANSOUR. Built as a smart portfolio and AI client intake system.": "© 2026 حماد علي صالح حسن. جميع الحقوق محفوظة - مطور ويب وأخصائي تقنية معلومات."
+  "© 2026 AHMED SHAWQI MANSOUR. Built as a smart portfolio and AI client intake system.": "© 2026 أحمد شوقي منصور. موقع شخصي ذكي ونظام استقبال طلبات العملاء."
 };
 
 function replaceLegacyArabicStrings(value: unknown): unknown {

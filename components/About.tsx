@@ -9,13 +9,13 @@ type AboutProps = {
   layoutVariant: LayoutVariant;
 };
 
-const LINKEDIN_URL = "https://ye.linkedin.com/in/ahmed-qaid-18171b3b4";
-const GITHUB_URL = "https://github.com/ahmed0qaid";
+const LINKEDIN_URL = "https://www.linkedin.com/in/hamad-ali-2485a9271/";
+const GITHUB_URL = "https://github.com/hamadalisaleh";
 
 const ABOUT_STATS = [
-  { value: "IT", labelAr: "المجال", labelEn: "Field" },
-  { value: "95.75", labelAr: "الدرجة", labelEn: "Grade" },
-  { value: "المرتبة", labelAr: "حاصل على مرتبة الشرف بدرجة امتياز", labelEn: "Honors — Excellent Grade" },
+  { value: "B.Sc. IT", labelAr: "خريج تقنية معلومات (UST)", labelEn: "IT Graduate (UST)" },
+  { value: "Full-Stack", labelAr: "تطوير الويب (PHP & MySQL)", labelEn: "Web Development" },
+  { value: "ERP & IT", labelAr: "أنظمة OnyxPro وشبكات", labelEn: "ERP & Networking" },
 ];
 
 function StatValue({ value }: { value: string }) {
@@ -57,14 +57,14 @@ function AboutSocialLinks() {
         target="_blank"
         rel="noreferrer noopener"
         className="group flex min-h-[86px] items-center gap-3 rounded-2xl border border-[#0a66c2]/30 bg-[#0a66c2]/10 p-3.5 transition duration-300 hover:-translate-y-0.5 hover:border-[#4da3f5]/60 hover:bg-[#0a66c2]/15 sm:p-4"
-        aria-label="Ahmed Qaid LinkedIn profile"
+        aria-label="Hamad Ali Saleh LinkedIn profile"
       >
         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#0a66c2] text-white sm:h-11 sm:w-11">
           <Linkedin className="h-5 w-5 sm:h-6 sm:w-6" />
         </span>
         <span className="min-w-0 flex-1">
           <span className="block text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-[#79b8f3]">LinkedIn</span>
-          <span className="mt-1 block truncate text-sm font-bold text-white">Ahmed Qaid</span>
+          <span className="mt-1 block truncate text-sm font-bold text-white">Hamad Ali Saleh</span>
           <span className="mt-0.5 block text-[0.68rem] leading-4 text-slate-400">
             <LocalizedText ar="الملف المهني" en="Professional profile" />
           </span>
@@ -77,14 +77,14 @@ function AboutSocialLinks() {
         target="_blank"
         rel="noreferrer noopener"
         className="group flex min-h-[86px] items-center gap-3 rounded-2xl border border-white/[0.12] bg-white/[0.045] p-3.5 transition duration-300 hover:-translate-y-0.5 hover:border-cyanBrand/35 hover:bg-white/[0.065] sm:p-4"
-        aria-label="Ahmed Qaid GitHub profile"
+        aria-label="Hamad Ali Saleh GitHub profile"
       >
         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-950 sm:h-11 sm:w-11">
           <Github className="h-5 w-5 sm:h-6 sm:w-6" />
         </span>
         <span className="min-w-0 flex-1">
           <span className="block text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-slate-300">GitHub</span>
-          <span className="mt-1 block truncate text-sm font-bold text-white">ahmed0qaid</span>
+          <span className="mt-1 block truncate text-sm font-bold text-white">hamadalisaleh</span>
           <span className="mt-0.5 block text-[0.68rem] leading-4 text-slate-400">
             <LocalizedText ar="المشاريع والكود" en="Projects & code" />
           </span>
