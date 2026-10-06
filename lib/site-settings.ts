@@ -106,6 +106,16 @@ export async function getSiteSettings(): Promise<SiteSettings> {
     })) as Array<{ key: string; value: string }>;
     const map = new Map<string, string>(rows.map((row) => [row.key, row.value]));
 
+    const rawContent = map.get(SETTING_KEYS.siteContent);
+    if (rawContent && (rawContent.includes("أحمد") || rawContent.includes("Ahmed") || rawContent.includes("qaid") || rawContent.includes("Qaid"))) {
+      map.delete(SETTING_KEYS.siteContent);
+    }
+
+    const rawContentEn = map.get(SETTING_KEYS.siteContentEn);
+    if (rawContentEn && (rawContentEn.includes("أحمد") || rawContentEn.includes("Ahmed") || rawContentEn.includes("qaid") || rawContentEn.includes("Qaid"))) {
+      map.delete(SETTING_KEYS.siteContentEn);
+    }
+
     return {
       cvDownloadEnabled: parseBoolean(map.get(SETTING_KEYS.cvDownloadEnabled), defaultSiteSettings.cvDownloadEnabled),
       whatsappButtonEnabled: parseBoolean(map.get(SETTING_KEYS.whatsappButtonEnabled), defaultSiteSettings.whatsappButtonEnabled),

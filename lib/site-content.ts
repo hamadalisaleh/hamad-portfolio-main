@@ -388,8 +388,32 @@ const legacyArabicText: Record<string, string> = {
   "© 2026 AHMED SHAWQI MANSOUR. Built as a smart portfolio and AI client intake system.": "© 2026 أحمد شوقي منصور. موقع شخصي ذكي ونظام استقبال طلبات العملاء."
 };
 
+const legacyStringReplacements: Array<[string, string]> = [
+  ["أحمد شوقي محمد قائد", "حماد علي صالح حسن"],
+  ["أحمد شوقي منصور", "حماد علي صالح حسن"],
+  ["أحمد شوقي", "حماد علي"],
+  ["أحمد", "حماد"],
+  ["AHMED SHAWQI MOHAMMED QAID", "HAMAD ALI SALEH HASSAN"],
+  ["AHMED SHAWQI MANSOUR", "HAMAD ALI SALEH HASSAN"],
+  ["AHMED SHAWQI", "HAMAD ALI"],
+  ["Ahmed Qaid", "Hamad Ali Saleh"],
+  ["AHMED QAID", "HAMAD ALI SALEH"],
+  ["ahmed0qaid", "hamadalisaleh"],
+  ["ahmedqaid", "hamadalisaleh"],
+  ["Ahmed", "Hamad"],
+  ["ahmed", "hamad"],
+];
+
 function replaceLegacyArabicStrings(value: unknown): unknown {
-  if (typeof value === "string") return legacyArabicText[value] || value;
+  if (typeof value === "string") {
+    let result = legacyArabicText[value] || value;
+    for (const [oldStr, newStr] of legacyStringReplacements) {
+      if (result.includes(oldStr)) {
+        result = result.replaceAll(oldStr, newStr);
+      }
+    }
+    return result;
+  }
   if (Array.isArray(value)) return value.map((item) => replaceLegacyArabicStrings(item));
   if (isObject(value)) {
     return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, replaceLegacyArabicStrings(item)]));
