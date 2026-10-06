@@ -7,7 +7,7 @@ type LeadWithBriefs = ClientLead & {
 function getLeadSummary(lead: LeadWithBriefs) {
   const latestBrief = lead.briefs?.[0];
   return [
-    `طلب مشروع جديد من موقع أحمد`,
+    `طلب مشروع جديد من موقع حماد`,
     ``,
     `العميل: ${lead.name}`,
     `الهاتف: ${lead.phone || "غير محدد"}`,
@@ -50,7 +50,7 @@ async function sendTelegramNotification(lead: LeadWithBriefs) {
 async function sendEmailNotification(lead: LeadWithBriefs) {
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.LEADS_NOTIFY_EMAIL;
-  const from = process.env.LEADS_NOTIFY_FROM || "Ahmed Portfolio <onboarding@resend.dev>";
+  const from = process.env.LEADS_NOTIFY_FROM || "Hamad Portfolio <onboarding@resend.dev>";
   if (!apiKey || !to) return { skipped: true, channel: "email" };
 
   const response = await fetch("https://api.resend.com/emails", {

@@ -11,8 +11,8 @@ type ContactProps = {
   whatsappButtonEnabled: boolean;
 };
 
-const LINKEDIN_URL = "https://ye.linkedin.com/in/ahmed-qaid-18171b3b4";
-const GITHUB_URL = "https://github.com/ahmed0qaid";
+const LINKEDIN_URL = "https://www.linkedin.com/in/hamad-ali-2485a9271/";
+const GITHUB_URL = "https://github.com/hamadalisaleh";
 
 export function buildWhatsAppUrl(number: string, message: string) {
   const digits = number.replace(/\D/g, "");
@@ -125,14 +125,14 @@ function SocialProfileCards() {
         target="_blank"
         rel="noreferrer noopener"
         className="group flex h-full items-center gap-3 rounded-2xl border border-[#0a66c2]/30 bg-[#0a66c2]/10 p-3.5 transition hover:-translate-y-0.5 hover:border-[#4da3f5]/60 hover:bg-[#0a66c2]/15 sm:gap-4 sm:p-4"
-        aria-label="Ahmed Qaid LinkedIn profile"
+        aria-label="Hamad Ali Saleh LinkedIn profile"
       >
         <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#0a66c2] text-white shadow-lg shadow-[#0a66c2]/20 sm:h-12 sm:w-12">
           <Linkedin className="h-6 w-6" />
         </span>
         <span className="min-w-0 flex-1">
           <span className="block text-xs font-medium uppercase tracking-[0.18em] text-[#79b8f3]">LinkedIn</span>
-          <span className="mt-1 block truncate text-sm font-bold text-white sm:text-base">Ahmed Qaid</span>
+          <span className="mt-1 block truncate text-sm font-bold text-white sm:text-base">Hamad Ali Saleh</span>
           <span className="mt-0.5 block text-xs text-slate-400 sm:text-sm">
             <LocalizedText ar="عرض الملف المهني والتواصل" en="View my professional profile and connect" />
           </span>
@@ -145,14 +145,14 @@ function SocialProfileCards() {
         target="_blank"
         rel="noreferrer noopener"
         className="group flex h-full items-center gap-3 rounded-2xl border border-slate-500/30 bg-slate-500/10 p-3.5 transition hover:-translate-y-0.5 hover:border-slate-300/50 hover:bg-slate-500/15 sm:gap-4 sm:p-4"
-        aria-label="Ahmed Qaid GitHub profile"
+        aria-label="Hamad Ali Saleh GitHub profile"
       >
         <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-900 text-white shadow-lg shadow-black/20 sm:h-12 sm:w-12">
           <Github className="h-6 w-6" />
         </span>
         <span className="min-w-0 flex-1">
           <span className="block text-xs font-medium uppercase tracking-[0.18em] text-slate-300">GitHub</span>
-          <span className="mt-1 block truncate text-sm font-bold text-white sm:text-base">ahmed0qaid</span>
+          <span className="mt-1 block truncate text-sm font-bold text-white sm:text-base">hamadalisaleh</span>
           <span className="mt-0.5 block text-xs text-slate-400 sm:text-sm">
             <LocalizedText ar="استعرض مشاريعي ومستودعاتي البرمجية" en="Explore my projects and code repositories" />
           </span>
