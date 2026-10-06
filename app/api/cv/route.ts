@@ -21,13 +21,13 @@ export async function GET(request: NextRequest) {
   }
 
   const filePath = path.join(process.cwd(), "private", "Ahmed_Qaid_CV.pdf");
-  const file = await readFile(filePath);
+  const file = await readFile(filePath).catch(() => Buffer.from(""));
 
   return new NextResponse(file, {
     status: 200,
     headers: {
       "Content-Type": "application/pdf",
-      "Content-Disposition": 'attachment; filename="Ahmed_Qaid_CV.pdf"',
+      "Content-Disposition": 'attachment; filename="Hamad_Ali_Saleh_CV.pdf"',
       "Cache-Control": "private, no-store, max-age=0",
       "X-Content-Type-Options": "nosniff",
     },

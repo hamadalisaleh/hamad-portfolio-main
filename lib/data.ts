@@ -1,110 +1,103 @@
 import { Code2, Database, Bot, Smartphone, Server, Workflow } from "lucide-react";
 
 export const profile = {
-  nameAr: "أحمد شوقي منصور",
-  nameEn: "AHMED SHAWQI MANSOUR",
-  titleAr: "مهندس برمجيات | مطور Backend وFull-Stack | مهتم بالذكاء الاصطناعي والأتمتة",
-  titleEn: "Software Engineer | Backend & Full-Stack Developer | AI & Automation Enthusiast",
-  phone: "735013640",
-  email: "ahmed0qaid@gmail.com",
-  location: "تعز - الحوبان",
+  nameAr: "حماد علي صالح حسن",
+  nameEn: "HAMAD ALI SALEH HASSAN",
+  titleAr: "مطور ويب | أخصائي تقنية معلومات (Web Developer | IT Specialist)",
+  titleEn: "Web Developer | IT Specialist",
+  phone: "+967 734189000",
+  email: "hamadalisalhe@gmail.com",
+  location: "تعز - اليمن",
   cvUrl: "/api/cv",
 };
 
 export const skills = [
   {
-    group: "Backend",
-    items: ["PHP", "Laravel", "Python", "SQL", "API Development"],
+    group: "تطوير الويب واللغات",
+    items: ["PHP", "HTML5", "CSS3", "JavaScript"],
   },
   {
-    group: "Frontend",
-    items: ["JavaScript", "React", "Bootstrap", "Responsive UI"],
+    group: "قواعد البيانات",
+    items: ["MySQL"],
   },
   {
-    group: "Mobile",
-    items: ["Flutter", "Dart", "GetX", "Clean Architecture"],
+    group: "أدوات وإدارة الإصدارات",
+    items: ["Git", "GitHub", "VS Code"],
   },
   {
-    group: "Databases",
-    items: ["PostgreSQL", "MySQL", "SQLite", "Oracle", "Supabase"],
+    group: "الاستضافة والويب",
+    items: ["Hostinger CPanel", "Domain Management", "SEO Optimization"],
   },
   {
-    group: "AI & Automation",
-    items: ["TensorFlow", "AI Prototypes", "n8n", "Content Automation"],
+    group: "الشبكات والحماية",
+    items: ["IP & CCTV Camera Installation", "Network Configuration & Programming"],
   },
   {
-    group: "Systems",
-    items: ["Windows Server", "Office", "Database Optimization"],
+    group: "أنظمة الأعمال و ERP",
+    items: ["OnyxPro ERP System", "Financial Accounting A & B"],
   },
 ];
 
 export const services = [
   {
-    icon: Server,
-    title: "Backend Development",
-    description:
-      "بناء واجهات برمجية APIs، منطق أعمال، وربط قواعد البيانات باستخدام Laravel وPHP وPython وSQL.",
-  },
-  {
     icon: Code2,
-    title: "Web Applications",
+    title: "Web Development",
     description:
-      "تطوير تطبيقات ويب حديثة بواجهات منظمة، أداء جيد، وبنية قابلة للتوسع والصيانة.",
+      "تصميم وبناء تطبيقات ومواقع ويب ديناميكية مخصصة وفق متطلبات العمل باستخدام PHP وMySQL.",
   },
   {
-    icon: Smartphone,
-    title: "Mobile Applications",
+    icon: Server,
+    title: "Hosting & Domain Admin",
     description:
-      "بناء تطبيقات موبايل باستخدام Flutter وDart مع تنظيم الكود وفق Clean Architecture.",
+      "رفع المواقع، إعداد CPanel على استضافات Hostinger، ربط النطاقات وتطبيق أفضل ممارسات SEO.",
+  },
+  {
+    icon: Workflow,
+    title: "SEO Optimization",
+    description:
+      "تطبيق استراتيجيات تحسين محركات البحث SEO الفعالة لرفع ترتيب المواقع في نتائج البحث.",
   },
   {
     icon: Database,
     title: "Database Design",
     description:
-      "تصميم قواعد بيانات علائقية، تنظيم الجداول، وتحسين الاستعلامات لتقليل التعقيد ورفع الأداء.",
+      "تصميم وتنظيم قواعد البيانات العلائقية MySQL وتحسين أداء الاستعلامات لتقليل زمن التحميل.",
+  },
+  {
+    icon: Smartphone,
+    title: "Networking & Security",
+    description:
+      "تركيب وبرمجة شبكات الحاسوب وكاميرات المراقبة IP للمؤسسات والشركات.",
   },
   {
     icon: Bot,
-    title: "AI-Based Solutions",
+    title: "ERP & Accounting Systems",
     description:
-      "بناء نماذج أولية وحلول مدعومة بالذكاء الاصطناعي لتجميع المتطلبات وتحليل البيانات.",
-  },
-  {
-    icon: Workflow,
-    title: "n8n Automation",
-    description:
-      "إنشاء أوتوميشن لتحليل المحتوى، إعادة إنتاجه، وربطه بأنظمة النشر أو أدوات العمل.",
+      "إدارة وتطبيق حلول الأنظمة المحاسبية وأنظمة ERP (أونكس برو OnyxPro).",
   },
 ];
 
 export const projects = [
   {
-    name: "Hotel Booking System",
-    status: "Featured",
-    stack: ["Flutter", "Supabase", "Clean Architecture", "GetX"],
+    name: "MawahibSoft Web Platform",
+    status: "Live & Deployed",
+    stack: ["PHP", "MySQL", "HTML5", "CSS3", "Git", "GitHub", "Hostinger"],
     description:
-      "نظام حجز فندقي لتطبيق ويب وموبايل، مربوط بقاعدة بيانات، مع تنظيم البيانات وتحسين الاستعلامات وبنية كود نظيفة.",
+      "تصميم وبناء منصة ويب ديناميكية مخصصة (mawahibsoft.com)، تطبيق تحسين محركات البحث SEO، والنشر الكامل على استضافة Hostinger.",
   },
   {
-    name: "AI-Powered Accounting System",
-    status: "In Progress",
-    stack: ["AI", "Database", "Business Logic"],
+    name: "IP Camera & Network Security System",
+    status: "Completed",
+    stack: ["IP Cameras", "CCTV", "Network Configuration", "Security"],
     description:
-      "نظام محاسبي متقدم مدمج بأدوات الذكاء الاصطناعي لدعم التحليل وتقليل المهام المتكررة.",
+      "تركيب وبرمجة شبكات حاسوبية وأنظمة مراقبة IP وكاميرات CCTV للمؤسسات.",
   },
   {
-    name: "Child Care Mobile App",
-    status: "In Progress",
-    stack: ["Flutter", "Mobile", "Healthcare Concept"],
+    name: "OnyxPro ERP System Administration",
+    status: "Field Experience",
+    stack: ["OnyxPro ERP", "Financial Accounting", "ERP Systems"],
     description:
-      "تطبيق موبايل مخصص لرعاية الأطفال وتنظيم المعلومات اليومية المتعلقة بهم.",
-  },
-  {
-    name: "n8n Content Automation",
-    status: "In Progress",
-    stack: ["n8n", "Automation", "Content Analysis"],
-    description:
-      "أوتوميشن لتحليل المحتوى، صناعة محتوى جديد، ونشره على منصات التواصل الاجتماعي.",
+      "إدارة وتهيئة النظام المحاسبي OnyxPro وإدارة الدورة المستندية والمالية للمؤسسات والشركات.",
   },
 ];
 

@@ -1,4 +1,4 @@
-# Ahmed Shawqi Mohammed Qaid — Backend & Cloud Software Engineering Portfolio
+# Hamad Ali Saleh Hassan — Web Developer & IT Specialist Portfolio
 
 Production-oriented portfolio built with **Next.js, TypeScript, PostgreSQL, Prisma, AI integrations, and cloud deployment**.
 
@@ -156,9 +156,10 @@ This is listed factually as participation; no winner, finalist, award, or rankin
 
 ## Current identity
 
-- Arabic: `أحمد شوقي محمد قائد`
-- English: `AHMED SHAWQI MOHAMMED QAID`
-- GitHub: https://github.com/ahmed2qaid
+- Arabic: `حماد علي صالح حسن`
+- English: `HAMAD ALI SALEH HASSAN`
+- Email: `hamadalisalhe@gmail.com`
+- GitHub: https://github.com/hamadalisaleh
 
 ## Recommended Vercel settings
 
