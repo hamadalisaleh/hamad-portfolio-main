@@ -2,7 +2,10 @@
   "mcpServers": {
     "vercel": {
       "command": "cmd.exe",
-      "args": ["/c", "npx", "-y", "@vercel/mcp"]
+      "args": ["/c", "npx", "-y", "@vercel/mcp"],
+      "env": {
+        "VERCEL_TOKEN": "vcp_4eBWsd4SDH1bGO1WhzTvutmCLERkyecofNCCOg9vPiw5Wj0zzt3Jtfsr"
+      }
     }
   }
 }
