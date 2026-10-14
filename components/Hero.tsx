@@ -26,21 +26,20 @@ export function Hero({ cvDownloadEnabled, content, contentEn, layoutVariant }: H
   const isCompact = layoutVariant === "compact";
   const isShowcase = layoutVariant === "showcase";
   const arDynamicTitles = [
-    "مهندس أنظمة باك إند",
-    "مهندس أنظمة سحابية",
-    "مهندس منصات برمجية",
-    "مهندس أنظمة موزعة",
-    "مهندس بنية تحتية للأتمتة",
-    "مهندس بنية تحتية للذكاء الاصطناعي",
+    "مطور ويب Full-Stack",
+    "مطور PHP & MySQL",
+    "أخصائي تقنية معلومات (IT)",
+    "إدارة الاستضافات وcPanel",
+    "أنظمة الشبكات وكاميرات المراقبة",
+    "أنظمة OnyxPro ERP المحاسبية",
   ];
   const enDynamicTitles = [
-    "Backend & Cloud Software Engineer",
-    "Backend Engineer",
-    "Cloud Engineer",
-    "Platform Engineer",
-    "Distributed Systems Engineer",
-    "Automation Infrastructure Engineer",
-    "AI Infrastructure Engineer",
+    "Full-Stack Web Developer",
+    "PHP & MySQL Developer",
+    "IT Specialist",
+    "Web Hosting & Deployment Specialist",
+    "Network & CCTV Systems Engineer",
+    "OnyxPro ERP Administrator",
   ];
   const profileSubtitleAr = profile.titleAr;
   const profileSubtitleEn = english.profile.titleEn || profile.titleEn;

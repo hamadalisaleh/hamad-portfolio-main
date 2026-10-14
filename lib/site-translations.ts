@@ -156,7 +156,7 @@ export const englishSiteContent: SiteContent = {
       { id: "phone", icon: "phone", label: "Phone", value: "+967 734189000", href: "tel:+967734189000", enabled: true, highlighted: false },
       { id: "whatsapp", icon: "whatsapp", label: "WhatsApp", value: "Chat on WhatsApp", href: "https://wa.me/967734189000", enabled: true, highlighted: true },
       { id: "location", icon: "location", label: "Location", value: "Taiz, Yemen", href: "", enabled: true, highlighted: false },
-      { id: "linkedin", icon: "link", label: "LinkedIn", value: "Hamad Ali Saleh on LinkedIn", href: "https://www.linkedin.com/in/hamad-ali-2485a9271/", enabled: true, highlighted: false },
+      { id: "linkedin", icon: "link", label: "LinkedIn", value: "Hamad Ali Saleh on LinkedIn", href: "https://www.linkedin.com/in/hamad-ali-2485", enabled: true, highlighted: false },
     ],
   },
   footer: {

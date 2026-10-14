@@ -1,6 +1,5 @@
 import type { LayoutVariant, SiteContent } from "@/lib/site-content";
 import { getSiteSettings } from "@/lib/site-settings";
-import type { CapabilityKey } from "@/lib/site-controls";
 import { LocalizedText } from "./LocalizedText";
 import { SectionHeader } from "./SectionHeader";
 import { serviceIconMap } from "./icon-map";
@@ -11,54 +10,54 @@ type ServicesProps = {
   layoutVariant: LayoutVariant;
 };
 
-const engineeringCapabilities = [
+const hamadServices = [
   {
-    key: "backend" as const,
-    icon: "server" as const,
-    titleAr: "Backend Engineering & APIs",
-    titleEn: "Backend Engineering & APIs",
-    descriptionAr: "تصميم وبناء REST APIs ومنطق الأعمال والمصادقة والتكاملات باستخدام Python وFastAPI وLaravel وSQL، مع التركيز على الوضوح والاختبار وقابلية الصيانة.",
-    descriptionEn: "Designing REST APIs, business logic, authentication, and service integrations with Python, FastAPI, Laravel, and SQL, with emphasis on clarity, testing, and maintainability.",
-  },
-  {
-    key: "cloud" as const,
+    key: "web-dev",
     icon: "code" as const,
-    titleAr: "Cloud & Platform Engineering",
-    titleEn: "Cloud & Platform Engineering",
-    descriptionAr: "بناء تطبيقات وخدمات قابلة للنشر باستخدام Docker وDocker Compose وGitHub Actions وCI/CD وإدارة الإعدادات والبيئات بصورة قابلة لإعادة الإنتاج.",
-    descriptionEn: "Building deployable services with Docker, Docker Compose, GitHub Actions, CI/CD, and reproducible environment and configuration management.",
+    titleAr: "تطوير تطبيقات الويب الكاملة",
+    titleEn: "Full-Stack Web Development",
+    descriptionAr: "تصميم وتطوير تطبيقات ومواقع ويب ديناميكية وقابلة للتطوير باستخدام PHP وMySQL وHTML5 وCSS3 وJavaScript، مع بناء لوحات تحكم إدارية ومصادقة وصلاحيات متقدمة.",
+    descriptionEn: "Designing and developing responsive, dynamic web applications with PHP, MySQL, HTML5, CSS3, and JavaScript, featuring admin dashboards, role-based access control, and secure authentication.",
   },
   {
-    key: "databases" as const,
+    key: "hosting-domains",
+    icon: "server" as const,
+    titleAr: "إدارة الاستضافات والدومينات",
+    titleEn: "Web Hosting & Domain Administration",
+    descriptionAr: "نشر المواقع وضبط إعدادات cPanel على استضافات Hostinger، حجز وربط النطاقات DNS، شهادات الحماية SSL، وإدارة قواعد البيانات ورفع الملفات بأمان.",
+    descriptionEn: "Deploying production websites and configuring cPanel on Hostinger servers, DNS domain management, SSL security certificate installation, and server file management.",
+  },
+  {
+    key: "database-design",
     icon: "database" as const,
-    titleAr: "Databases & Data Modeling",
-    titleEn: "Databases & Data Modeling",
-    descriptionAr: "تصميم نماذج بيانات علائقية، migrations، queries وتدفقات تخزين باستخدام PostgreSQL وMySQL وSQL Server وSQLite وSupabase وPrisma.",
-    descriptionEn: "Relational data modeling, migrations, queries, and persistence workflows with PostgreSQL, MySQL, SQL Server, SQLite, Supabase, and Prisma.",
+    titleAr: "تصميم وإدارة قواعد البيانات",
+    titleEn: "Database Design & SQL Management",
+    descriptionAr: "تصميم قواعد البيانات العلائقية Relational Database Design باستخدام MySQL وSQL، تحسين سرعة الاستعلامات، هيكلة الجداول والعلاقات، وحماية البيانات من الاختراقات.",
+    descriptionEn: "Relational database modeling with MySQL and SQL, query performance optimization, structured schema design, secure transactions, and data integrity.",
   },
   {
-    key: "distributed" as const,
+    key: "seo-optimization",
     icon: "workflow" as const,
-    titleAr: "Distributed & Durable Systems",
-    titleEn: "Distributed & Durable Systems",
-    descriptionAr: "تصميم أنماط تنفيذ متينة تشمل checkpoints وworker leases وheartbeats وretry/backoff وidempotency وحماية التزامن والاستعادة بعد الأعطال.",
-    descriptionEn: "Designing durable execution patterns with checkpoints, worker leases, heartbeats, retry/backoff, idempotency, concurrency protection, and crash recovery.",
+    titleAr: "تحسين محركات البحث والأداء (SEO)",
+    titleEn: "Search Engine Optimization (SEO)",
+    descriptionAr: "تطبيق أفضل ممارسات SEO التقنية والمحتوى لزيادة ظهور المواقع في نتائج Google، تحسين سرعة تحميل الصفحات، وضبط Meta Tags وSitemap وتجاوب الشاشات.",
+    descriptionEn: "Applying technical on-page SEO best practices to boost Google search engine indexing, page speed optimization, meta tags, sitemaps, and mobile responsiveness.",
   },
   {
-    key: "automation-ai" as const,
-    icon: "bot" as const,
-    titleAr: "Automation & AI Infrastructure",
-    titleEn: "Automation & AI Infrastructure",
-    descriptionAr: "بناء طبقات تحكم للأتمتة وAI Agents تشمل MCP، policy engines، approvals، safe side effects، تكاملات LLM وn8n ومسارات تنفيذ قابلة للتدقيق.",
-    descriptionEn: "Building automation and AI-agent infrastructure with MCP, policy engines, approvals, safe side effects, LLM integrations, n8n, and auditable execution paths.",
-  },
-  {
-    key: "observability" as const,
+    key: "networks-cctv",
     icon: "smartphone" as const,
-    titleAr: "Observability & Reliability",
-    titleEn: "Observability & Reliability",
-    descriptionAr: "إضافة tracing ومؤشرات التنفيذ والأخطاء والتكلفة باستخدام OpenTelemetry، مع تصميم أنظمة قابلة للمراقبة والتحليل والتعافي بدل الاعتماد على السلوك غير المرئي.",
-    descriptionEn: "Adding tracing, execution signals, error and cost metadata with OpenTelemetry, and designing systems that are observable, diagnosable, and recoverable.",
+    titleAr: "الشبكات وكاميرات المراقبة IP & CCTV",
+    titleEn: "Networking & IP/CCTV Security Systems",
+    descriptionAr: "تركيب وبرمجة شبكات الحاسوب، ضبط وتوزيع عناوين IP، إعداد وتكوين أنظمة كاميرات المراقبة CCTV والشبكية IP الذكية، وتأمين الاتصال والمراقبة عن بعد.",
+    descriptionEn: "Network programming and configuration, IP addressing and subnetting, installation and programming of CCTV and intelligent IP camera security systems.",
+  },
+  {
+    key: "erp-accounting",
+    icon: "bot" as const,
+    titleAr: "أنظمة OnyxPro ERP والمحاسبة المالية",
+    titleEn: "OnyxPro ERP Systems & Accounting",
+    descriptionAr: "إدارة وتكوين النظام المحاسبي المتكامل OnyxPro ERP، إدارة الدورة المستندية والمالية للمؤسسات والشركات، وضبط قيود المحاسبة المالية (A & B) ومتابعة التقارير المالية.",
+    descriptionEn: "Administration and configuration of the OnyxPro ERP accounting system, managing corporate document workflows, financial accounting entries (A & B), and business reports.",
   },
 ];
 
@@ -71,8 +70,6 @@ export async function Services({ content, contentEn, layoutVariant }: ServicesPr
     : controls.servicesColumns === 2
       ? "lg:grid-cols-2"
       : "lg:grid-cols-3";
-  const capabilityMap = new Map<CapabilityKey, (typeof engineeringCapabilities)[number]>(engineeringCapabilities.map((item) => [item.key, item] as const));
-  const orderedCapabilities = controls.capabilityOrder.map((key) => capabilityMap.get(key)).filter(Boolean) as (typeof engineeringCapabilities)[number][];
 
   return (
     <section id="services" className={isCompact ? "py-9 sm:py-10 lg:py-12" : "py-10 sm:py-12 lg:py-16"}>
@@ -84,7 +81,7 @@ export async function Services({ content, contentEn, layoutVariant }: ServicesPr
           subtitleEn={english.servicesHeader.subtitle}
         />
         <div className={`mt-7 grid gap-4 sm:mt-8 sm:gap-5 lg:mt-10 md:grid-cols-2 ${columnsClass}`}>
-          {orderedCapabilities.map((service, index) => {
+          {hamadServices.map((service, index) => {
             const Icon = serviceIconMap[service.icon] ?? serviceIconMap.server;
             return (
               <article key={service.key} className="repo-card group rounded-3xl p-5 transition hover:-translate-y-1 hover:border-cyanBrand/40 sm:p-6">
@@ -93,7 +90,7 @@ export async function Services({ content, contentEn, layoutVariant }: ServicesPr
                 </div>
                 <div className="mt-4 flex items-center gap-2 text-xs font-semibold text-slate-500 sm:mt-5">
                   <span className="h-1.5 w-1.5 rounded-full bg-cyanBrand" />
-                  <span><LocalizedText ar={`قدرة ${String(index + 1).padStart(2, "0")}`} en={`Capability ${String(index + 1).padStart(2, "0")}`} /></span>
+                  <span><LocalizedText ar={`مجال ${String(index + 1).padStart(2, "0")}`} en={`Service ${String(index + 1).padStart(2, "0")}`} /></span>
                 </div>
                 <h3 className="mt-2 text-lg font-black text-white sm:text-xl"><LocalizedText ar={service.titleAr} en={service.titleEn} /></h3>
                 <p className="mt-2.5 leading-7 text-slate-300/95 sm:mt-3 sm:leading-8"><LocalizedText ar={service.descriptionAr} en={service.descriptionEn} /></p>

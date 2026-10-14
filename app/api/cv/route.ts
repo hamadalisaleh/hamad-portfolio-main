@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  const filePath = path.join(process.cwd(), "private", "Ahmed_Qaid_CV.pdf");
+  const filePath = path.join(process.cwd(), "private", "Hamad_Ali_Saleh_CV.pdf");
   const file = await readFile(filePath).catch(() => Buffer.from(""));
 
   return new NextResponse(file, {

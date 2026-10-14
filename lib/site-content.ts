@@ -281,7 +281,7 @@ export const defaultSiteContent: SiteContent = {
       { id: "phone", icon: "phone", label: "الهاتف", value: "+967 734189000", href: "tel:+967734189000", enabled: true, highlighted: false },
       { id: "whatsapp", icon: "whatsapp", label: "واتساب", value: "راسلني على واتساب", href: "https://wa.me/967734189000", enabled: true, highlighted: true },
       { id: "location", icon: "location", label: "الموقع", value: "تعز - اليمن", href: "", enabled: true, highlighted: false },
-      { id: "linkedin", icon: "link", label: "LinkedIn", value: "حمد علي صالح على LinkedIn", href: "https://www.linkedin.com/in/hamad-ali-2485a9271/", enabled: true, highlighted: false },
+      { id: "linkedin", icon: "link", label: "LinkedIn", value: "حمد علي صالح على LinkedIn", href: "https://www.linkedin.com/in/hamad-ali-2485", enabled: true, highlighted: false },
     ],
   },
   footer: {
@@ -382,10 +382,10 @@ const legacyArabicText: Record<string, string> = {
   "AI-Powered Accounting System": "نظام محاسبي مدعوم بالذكاء الاصطناعي",
   "Child Care Mobile App": "تطبيق موبايل لرعاية الأطفال",
   "n8n Content Automation": "أتمتة المحتوى باستخدام n8n",
-  "© 2026 Ahmed Qaid. Built as a smart portfolio and AI client intake system.": "© 2026 أحمد شوقي منصور. موقع شخصي ذكي ونظام استقبال طلبات العملاء.",
+  "© 2026 Ahmed Qaid. Built as a smart portfolio and AI client intake system.": "© 2026 حمد علي صالح حسن. جميع الحقوق محفوظة - مطور ويب وأخصائي تقنية معلومات.",
   "الخدمات مبنية على المهارات الموجودة في السيرة الذاتية، مع إبراز المجالات الأقوى: Backend، قواعد البيانات، Flutter، والذكاء الاصطناعي التطبيقي.": "خدمات تقنية متكاملة لتحويل الأفكار إلى مواقع، تطبيقات، وأنظمة ذكية عملية.",
   "The services are aligned with the strongest areas in the CV: backend development, databases, Flutter, applied AI, and automation.": "Integrated digital services to transform ideas into practical websites, applications, and smart systems.",
-  "© 2026 AHMED SHAWQI MANSOUR. Built as a smart portfolio and AI client intake system.": "© 2026 أحمد شوقي منصور. موقع شخصي ذكي ونظام استقبال طلبات العملاء."
+  "© 2026 AHMED SHAWQI MANSOUR. Built as a smart portfolio and AI client intake system.": "© 2026 حمد علي صالح حسن. جميع الحقوق محفوظة - مطور ويب وأخصائي تقنية معلومات."
 };
 
 const legacyStringReplacements: Array<[string, string]> = [

@@ -9,7 +9,7 @@ type AboutProps = {
   layoutVariant: LayoutVariant;
 };
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/hamad-ali-2485a9271/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/hamad-ali-2485";
 const GITHUB_URL = "https://github.com/hamadalisaleh";
 
 const ABOUT_STATS = [

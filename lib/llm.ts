@@ -163,7 +163,7 @@ async function askOpenRouter(messages: ChatMessage[]): Promise<AIReply> {
       "Content-Type": "application/json",
       Authorization: `Bearer ${apiKey}`,
       "HTTP-Referer": process.env.SITE_URL || "http://localhost:3000",
-      "X-Title": process.env.SITE_NAME || "Ahmed AI Portfolio",
+      "X-Title": process.env.SITE_NAME || "Hamad AI Portfolio",
     },
     body: JSON.stringify({
       model,

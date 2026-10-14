@@ -54,7 +54,7 @@ export async function Navbar({ cvDownloadEnabled, content, contentEn, defaultLan
           {controls.showNavbarSocials ? (
             <div className="flex items-center gap-1.5 border-e border-white/10 pe-2" aria-label="Social profiles">
               <a href="https://github.com/hamadalisaleh" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub" className="group grid h-9 w-9 place-items-center rounded-xl border border-white/[0.09] bg-white/[0.035] text-slate-400 transition duration-300 hover:-translate-y-0.5 hover:border-cyanBrand/35 hover:bg-cyanBrand/[0.09] hover:text-cyan-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyanBrand/60"><Github className="h-4 w-4" /></a>
-              <a href="https://www.linkedin.com/in/hamad-ali-2485a9271/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn" className="group grid h-9 w-9 place-items-center rounded-xl border border-white/[0.09] bg-white/[0.035] text-slate-400 transition duration-300 hover:-translate-y-0.5 hover:border-sky-400/40 hover:bg-sky-400/[0.09] hover:text-sky-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60"><Linkedin className="h-4 w-4" /></a>
+              <a href="https://www.linkedin.com/in/hamad-ali-2485" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn" className="group grid h-9 w-9 place-items-center rounded-xl border border-white/[0.09] bg-white/[0.035] text-slate-400 transition duration-300 hover:-translate-y-0.5 hover:border-sky-400/40 hover:bg-sky-400/[0.09] hover:text-sky-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60"><Linkedin className="h-4 w-4" /></a>
             </div>
           ) : null}
 
