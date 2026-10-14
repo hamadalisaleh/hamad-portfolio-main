@@ -121,7 +121,7 @@ TELEGRAM_CHAT_ID=your_telegram_chat_id
 ```env
 RESEND_API_KEY=your_resend_key
 LEADS_NOTIFY_EMAIL=your_email@example.com
-LEADS_NOTIFY_FROM=Ahmed Portfolio <onboarding@resend.dev>
+LEADS_NOTIFY_FROM=Hamad Portfolio <onboarding@resend.dev>
 ```
 
 The application still stores and displays leads normally when notification variables are not configured.
@@ -134,25 +134,12 @@ The application still stores and displays leads normally when notification varia
 4. Edit Arabic/English content and design settings.
 5. Save changes without modifying source code.
 
-## Software engineering challenge
+## Featured Projects
 
-**Participant — ICPC 2026 Online Challenge 1 powered by Huawei**
-
-Worked on **Problem A: Edge–Cloud Collaborative Scheduling** and iteratively developed a C++ scheduling solution covering dynamic batching, resource allocation, latency/throughput trade-offs, SLO-aware scheduling, and model-predictive scheduling strategies.
-
-- Repository: https://github.com/ahmed2qaid/edge-cloud-collaborative-scheduling
-- Codeforces problem: https://codeforces.com/contest/2251/problem/A
-- Codeforces profile: https://codeforces.com/profile/ayhywi
-
-This is listed factually as participation; no winner, finalist, award, or ranking claim is made.
-
-## Related engineering projects
-
-- [FlowGuard — Agentic Automation Control Plane](https://github.com/ahmed2qaid/agentic-automation-control-plane)
-- [TrustFlow Sentinel](https://github.com/ahmed2qaid/trustflow-sentinel)
-- [RepoRadar AI](https://github.com/ahmed2qaid/RepoRadar)
-- [Python Backend & Frontend API Integration](https://github.com/ahmed2qaid/python-backend-frontend-integration)
-- [Edge–Cloud Collaborative Scheduling](https://github.com/ahmed2qaid/edge-cloud-collaborative-scheduling)
+- [MawahibSoft Platform (منصة مواهب سوفت)](https://mawahibsoft.com)
+- [CCTV & IP Camera Networks Setup](https://github.com/hamadalisaleh)
+- [OnyxPro ERP Administration & Configuration](https://github.com/hamadalisaleh)
+- [Full-Stack Web & Database Applications (PHP & MySQL)](https://github.com/hamadalisaleh)
 
 ## Current identity
 

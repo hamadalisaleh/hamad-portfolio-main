@@ -1,4 +1,4 @@
-# Ahmed Portfolio — Design Specification
+# Hamad Portfolio — Design Specification
 
 ## Design Read
 Developer portfolio for recruiters, technical collaborators, and clients. The visual language should feel technical, editorial, restrained, and credible — closer to a polished developer product than an agency template or SaaS landing page.
@@ -53,7 +53,7 @@ Use a consistent spacing rhythm based on approximately 4 / 8 / 12 / 16 / 24 / 32
 
 ### Hero
 The Hero must answer within a few seconds:
-1. Who Ahmed is.
+1. Who Hamad is.
 2. What he builds.
 3. What his current focus is.
 4. What the visitor should do next.

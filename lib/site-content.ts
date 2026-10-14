@@ -338,8 +338,8 @@ function cleanStringArray(values: string[], maxItems: number, maxText: number) {
 
 
 const legacyArabicText: Record<string, string> = {
-  "أحمد شوقي محمد قائد": "أحمد شوقي منصور",
-  "Ahmed Qaid": "AHMED SHAWQI MANSOUR",
+  "أحمد شوقي محمد قائد": "حمد علي صالح حسن",
+  "Ahmed Qaid": "HAMAD ALI SALEH HASSAN",
   "Portfolio + AI Client Intake System": "معرض أعمال + نظام استقبال طلبات ذكي",
   "Software Engineer": "مهندس برمجيات",
   "ابدأ مع AI Assistant": "ابدأ مع المساعد الذكي",

@@ -1,12 +1,10 @@
 # Portfolio profile update — August 2026
 
-This portfolio was refreshed to keep the public profile aligned with the current professional identity and latest engineering work.
+This portfolio was customized to showcase the engineering profile and professional identity of **HAMAD ALI SALEH HASSAN** (حمد علي صالح حسن).
 
 ## Updates
 
-- Standardized the public name to **AHMED SHAWQI MOHAMMED QAID**.
-- Highlighted participation in **ICPC 2026 Online Challenge 1 powered by Huawei**.
-- Added the public repository for the **Edge–Cloud Collaborative Scheduling** solution:
-  - https://github.com/ahmed2qaid/edge-cloud-collaborative-scheduling
-- Kept the participation wording factual: **Participant** only; no ranking or award claims.
-- Positioning remains focused on entry-level software engineering, backend, databases, systems, and practical project work.
+- Standardized the public name to **HAMAD ALI SALEH HASSAN** (`حمد علي صالح حسن`).
+- Highlighting real projects: **MawahibSoft Platform**, **IP & CCTV Camera Networks**, **OnyxPro ERP Administration**, and **Full-Stack Web & Databases (PHP & MySQL)**.
+- Professional focus: Web Development, Database Architecture, IT Systems, Networks, and Business Solutions.
+

@@ -1,4 +1,4 @@
--- Initial schema for Ahmed AI Portfolio
+-- Initial schema for Hamad AI Portfolio
 -- Generated for PostgreSQL / Neon / Prisma
 
 CREATE TYPE "LeadStatus" AS ENUM ('NEW', 'REVIEWED', 'CONTACTED', 'ACCEPTED', 'REJECTED');
