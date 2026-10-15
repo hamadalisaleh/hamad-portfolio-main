@@ -20,8 +20,9 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  const filePath = path.join(process.cwd(), "private", "Hamad_Ali_Saleh_CV.pdf");
-  const file = await readFile(filePath).catch(() => Buffer.from(""));
+  const publicPath = path.join(process.cwd(), "public", "Hamad_Ali_Saleh_CV.pdf");
+  const privatePath = path.join(process.cwd(), "private", "Hamad_Ali_Saleh_CV.pdf");
+  const file = await readFile(publicPath).catch(() => readFile(privatePath)).catch(() => Buffer.from(""));
 
   return new NextResponse(file, {
     status: 200,
